@@ -1,0 +1,117 @@
+*{
+     margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+body {
+  font: 16px/20px "Lato", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background: white;
+}
+*::before,
+*::after
+ {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.traversy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.head_img{
+    position: absolute;
+  z-index: 1;
+  display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    /* justify-content: center; */
+    width: 300px;
+  transition: all 1000ms;
+}
+
+.traversy::after {
+    content: '';
+    height: 100vh;
+    width: 100%;
+    background-image: url(https://image.ibb.co/gzOBup/showcase.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: block;
+    filter: blur(10px);
+    -webkit-filter: blur(10px);
+    transition: all 1000ms;
+  }
+  
+  .traversy:hover::after {
+    filter: blur(0px);
+    -webkit-filter: blur(0px);
+  }
+  
+  .traversy:hover .head_img {
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+  }
+  .traversy .logo {
+    height: 180px;
+    width: 180px;
+  }
+  
+  .traversy .trav_title {
+    font-size: 2rem;
+    margin-top: 1rem;
+  }
+  
+  .traversy .trav_text {
+    line-height: 1.7rem;
+    margin-top: 1rem;
+  }
+  .main{
+    background-color: black;
+  }
+  .three_col{
+    
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+    padding: 40px;
+  }
+  .box{
+    width: 400px;
+    margin: auto;
+    line-height: 2rem;
+  }
+  .main_fav{
+    max-width: 960px;
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    color: gray;
+    background-color: white;
+    margin: auto;
+    padding: 3rem;
+  }
+  .fav i{
+    background-color: white;
+    color: gray;
+  }
+  .fav_para{
+    width: 400px;
+  }
+  .fav_para h3{
+    color: gray;
+      }
+      .fav_para p{
+        color: gray;
+          }
+          .foot{
+            background-color: gray;
+            padding: 20px;
+            text-align: center;
+          }
+  
